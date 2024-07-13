@@ -51,4 +51,17 @@
     font-family: "Playfair Display", serif;
     font-weight: bold;
 }
+.passworddisplay{
+    position: relative;
+    bottom: 60px;
+    left: 200px;
+
+}
+
+.passworddisplaynew{
+    position: relative;
+    bottom: 40px;
+    left: 200px;
+
+}
 
