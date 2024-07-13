@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Header.css'
 import { Link } from 'react-router-dom'
+import Menu from './Menu'
+
 
 export default function Header() {
+
+    // this is for the  displaying of menubar 
+    let [menubar,setmenubar]=useState(false)
+
     return (
         <div>
             {/* this is for the discount message part on the top */}
@@ -12,10 +18,10 @@ export default function Header() {
             </div>
 
             {/* this is for the nav bar in which search bar login page and other things */}
-            <div className='bg-[#30F2F2] w-full h-[90px] navb px-9 my-auto '>
+            <div className='bg-[#57FBFF] w-full h-[90px] navb px-9 my-auto '>
                 {/* this is for the menu bar */}
                 <div>
-                    <h1 className='text'>MENU</h1>
+                    <h1 className='text' onClick={()=>setmenubar(!menubar)}>MENU</h1>
                 </div>
                 {/* this is for the home */}
                 <div>
@@ -28,8 +34,13 @@ export default function Header() {
                     <h1 className='text'><Link to={'/Login'}>Login</Link></h1>
                     <h1 className='text'>CART</h1>
                 </div>
+                
 
             </div>
+            <Menu menubar={menubar} setmenubar={setmenubar}></Menu>
         </div>
     )
 }
+
+
+

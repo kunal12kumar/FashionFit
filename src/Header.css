@@ -58,10 +58,10 @@
 
 }
 
-.passworddisplaynew{
-    position: relative;
-    bottom: 40px;
-    left: 200px;
-
+.bo2{
+    width: 200px;
+    height: 100vh;
+    background-color: red;
 }
+
 

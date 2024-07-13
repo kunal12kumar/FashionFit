@@ -1,0 +1,57 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+.menubox{
+    position: absolute;
+    height: 100vh;
+    width: 380px;
+    border: 2px solid black;
+    top: 0px;
+    left: -100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
+
+}
+.upperbox{
+    position: sticky;
+}
+.activemenu{
+    position: absolute;
+    height: 100vh;
+    width: 380px;
+    border: 2px solid black;
+    top: 0px;
+    left:0px;
+    overflow: scroll;
+    overflow-x: hidden;
+    position: fixed;
+}
+
+ .search,.cross{
+    position: absolute;
+    cursor: pointer;
+ } 
+
+.search{
+    left: 40px;
+    font-size:x-large;
+}
+
+.cross{
+    right: 40px;
+    font-size: x-large;
+} 
+
+.form{
+    padding-top: 40px;
+    display: flex;
+    justify-content:space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
