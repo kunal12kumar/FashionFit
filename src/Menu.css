@@ -10,16 +10,14 @@
     border: 2px solid black;
     top: 0px;
     left: -100%;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
     position: fixed;
     transition-timing-function: ease-in-out;
     transition-duration: 0.5s;
 
 }
-.upperbox{
-    position: sticky;
-}
+
+
 .activemenu{
     position: absolute;
     height: 100vh;
@@ -27,8 +25,7 @@
     border: 2px solid black;
     top: 0px;
     left:0px;
-    overflow: scroll;
-    overflow-x: hidden;
+    overflow: auto;
     position: fixed;
 }
 

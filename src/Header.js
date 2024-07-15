@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import Menu from './Menu'
 
 
+
 export default function Header() {
 
     // this is for the  displaying of menubar 
@@ -18,7 +19,7 @@ export default function Header() {
             </div>
 
             {/* this is for the nav bar in which search bar login page and other things */}
-            <div className='bg-[#57FBFF] w-full h-[90px] navb px-9 my-auto '>
+            <div className='bg-[#0645c4] w-full h-[90px] navb px-9 my-auto '>
                 {/* this is for the menu bar */}
                 <div>
                     <h1 className='text' onClick={()=>setmenubar(!menubar)}>MENU</h1>
@@ -38,6 +39,7 @@ export default function Header() {
 
             </div>
             <Menu menubar={menubar} setmenubar={setmenubar}></Menu>
+            
         </div>
     )
 }

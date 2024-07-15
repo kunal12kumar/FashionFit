@@ -6,6 +6,8 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Login from './Login';
 import NewRegister from './pages/NewRegister';
+import Product from './pages/Product';
+import Productsdetails from './pages/Productsdetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 let allrouter=createBrowserRouter([
@@ -20,7 +22,19 @@ let allrouter=createBrowserRouter([
   {
     path:'/NewRegister',
     element:<NewRegister></NewRegister>
-  }
+  },
+  {
+    path:'/Product',
+    element:<Product></Product>
+  },
+  {
+    path:'/Product/:id',
+    element:<Productsdetails></Productsdetails>
+  },
+  // {
+  //   path:'*',
+  //   element:<Error404></Error404>
+  // }
 ])
 root.render(
   <React.StrictMode>

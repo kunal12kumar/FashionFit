@@ -64,4 +64,28 @@
     background-color: red;
 }
 
+/* form here we are styling for the product categories  */
+
+.prodbox{
+    background-color: #ac9f9f;
+
+}
+
+.prod{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    font-size: x-large;
+    color: white;
+    
+}
+
+.shadow{
+    box-shadow: 4px 4px rgb(9, 54, 161);
+}
+
 
