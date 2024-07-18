@@ -39,6 +39,7 @@ export default function NewRegister() {
 
         let toaddnewdatainarray=[...allnewuserdata,dataofnewuser]
         setallnewuserdata(toaddnewdatainarray)
+        console.log(setallnewuserdata)
 
         setaddnewuserdata({
             firstname:'',

@@ -35,6 +35,7 @@ export default function Login() {
 
     let newalldata=[...saveudata,eachuserdata]
     setsaveudata(newalldata)
+    console.log(newalldata)
     setadduserData({
       uemail:'',
       upassword:''

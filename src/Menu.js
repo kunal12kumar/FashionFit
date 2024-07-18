@@ -78,11 +78,11 @@ export default function Menu({ menubar, setmenubar }) {
 
 
 
-function Category({value}) {
+export function Category({value,setcatname}) {
 
     return (
         <ul className='bg-white pt-2'>
-            <li className='w-[320px] h-[50px] font-serif uppercase   border-b-2 pl-4'>{value}</li>
+            <li className='w-[320px] h-[50px] font-serif uppercase   border-b-2 pl-4 cursor-pointer' onClick={()=>setcatname({value})}>{value}</li>
 
         </ul>
 

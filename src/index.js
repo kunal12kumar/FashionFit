@@ -26,11 +26,7 @@ let allrouter=createBrowserRouter([
   {
     path:'/Product',
     element:<Product></Product>
-  },
-  {
-    path:'/Product/:id',
-    element:<Productsdetails></Productsdetails>
-  },
+  }
   // {
   //   path:'*',
   //   element:<Error404></Error404>
